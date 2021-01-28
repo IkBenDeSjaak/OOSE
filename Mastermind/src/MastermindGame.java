@@ -27,9 +27,9 @@ public class MastermindGame {
             this.isWon = true;
         } else {
             for (int i = 0; i < this.secretCode.size(); i++) {
-                if (userInputList.get(i).equals(secretCode.get(i))) {
+                if (userInputList.get(i).equals(this.secretCode.get(i))) {
                     this.positionsRight++;
-                } else {
+                } else if (this.secretCode.contains(userInputList.get(i))) {
                     this.positionsWrong++;
                 }
             }
@@ -43,8 +43,8 @@ public class MastermindGame {
     }
 
     public String getHint() {
-        String line1 = "right colour wrong position = " + this.positionsRight;
-        String line2 = "Right colour wrong position = " + this.positionsWrong;
+        String line1 = "right colour right position = " + this.positionsRight;
+        String line2 = "right colour wrong position = " + this.positionsWrong;
         this.positionsRight = 0;
         this.positionsWrong = 0;
         return line1 + "\r\n" + line2;
