@@ -43,11 +43,16 @@ public class MastermindGame {
     }
 
     public String getHint() {
-        String line1 = "right colour right position = " + this.positionsRight;
-        String line2 = "right colour wrong position = " + this.positionsWrong;
-        this.positionsRight = 0;
-        this.positionsWrong = 0;
-        return line1 + "\r\n" + line2;
+        if(!isWon) {
+            String line1 = "right colour right position = " + this.positionsRight;
+            String line2 = "right colour wrong position = " + this.positionsWrong;
+            this.positionsRight = 0;
+            this.positionsWrong = 0;
+            return line1 + "\r\n" + line2;
+        } else {
+            return "";
+        }
+
     }
 
     public boolean maxTurnsUsed() {
