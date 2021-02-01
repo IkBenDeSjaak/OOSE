@@ -1,0 +1,3 @@
+Parkeren in de parkeergarage
+
+De automobilist drukt op de knop van de automaat. Het systeem geeft een ticket terug met datum en tijd. De automobilist pakt het ticket en parkeert de auto op een vrije plek. Het systeem registreert dat de parkeerplek gebruikt wordt en laat dat zien op de displays.
