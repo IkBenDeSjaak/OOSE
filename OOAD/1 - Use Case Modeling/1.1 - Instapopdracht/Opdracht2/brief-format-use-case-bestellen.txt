@@ -1,0 +1,3 @@
+Bestelling plaatsen
+
+De klant zoekt een boek. Vervolgens toont het systeem een lijst met boeken. De klant selecteert vervolgens het goede boek. Daarna geeft de klant aan te willen betalen. Het systeem toont dan een overzicht van de bestelling. Na de bevestiging betaalt de klant via de betaalservice. Vervolgens stuurt stuurt het systeem een bevestiging ter email.
