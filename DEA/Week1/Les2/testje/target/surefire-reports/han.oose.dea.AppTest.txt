@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: han.oose.dea.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.042 s <<< FAILURE! - in han.oose.dea.AppTest
+shouldAnswerWithTrue  Time elapsed: 0.035 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at han.oose.dea.AppTest.shouldAnswerWithTrue(AppTest.java:18)
+
