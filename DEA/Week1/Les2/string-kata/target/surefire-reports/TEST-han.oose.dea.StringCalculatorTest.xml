@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="han.oose.dea.StringCalculatorTest" time="0.045" tests="3" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="han.oose.dea.StringCalculatorTest" time="0.052" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="NL"/>
     <property name="sun.boot.library.path" value="C:\Users\koksj\.jdks\jdk-12\bin"/>
-    <property name="sun.java.command" value="C:\Users\koksj\AppData\Local\Temp\surefire9189543685906214526\surefirebooter2295687841812016509.jar C:\Users\koksj\AppData\Local\Temp\surefire9189543685906214526 2021-02-03T12-45-47_258-jvmRun1 surefire17746350278874204724tmp surefire_08638422576144098011tmp"/>
+    <property name="sun.java.command" value="C:\Users\koksj\AppData\Local\Temp\surefire7317007505600338067\surefirebooter3284859616254149666.jar C:\Users\koksj\AppData\Local\Temp\surefire7317007505600338067 2021-02-03T13-43-05_870-jvmRun1 surefire13532089414591824135tmp surefire_05259989365323084716tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\koksj\Documents\HAN\HBO-ICT\20-21-basissemesters\OOSE\GitHub\OOSE\DEA\Week1\Les2\string-kata\target\test-classes;C:\Users\koksj\Documents\HAN\HBO-ICT\20-21-basissemesters\OOSE\GitHub\OOSE\DEA\Week1\Les2\string-kata\target\classes;C:\Users\koksj\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\koksj\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\koksj\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;C:\Users\koksj\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\koksj\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\koksj\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\koksj\AppData\Local\Temp\surefire9189543685906214526\surefirebooter2295687841812016509.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\koksj\AppData\Local\Temp\surefire7317007505600338067\surefirebooter3284859616254149666.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="12+33"/>
@@ -59,11 +59,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="56.0"/>
   </properties>
-  <testcase name="multipleNumbersTest" classname="han.oose.dea.StringCalculatorTest" time="0.028">
-    <failure message="expected: &lt;4&gt; but was: &lt;5&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <4> but was: <5>
-	at han.oose.dea.StringCalculatorTest.multipleNumbersTest(StringCalculatorTest.java:28)
-]]></failure>
-  </testcase>
-  <testcase name="singeNumberTest" classname="han.oose.dea.StringCalculatorTest" time="0"/>
+  <testcase name="multipleNumbersTest" classname="han.oose.dea.StringCalculatorTest" time="0.037"/>
+  <testcase name="newLineTest" classname="han.oose.dea.StringCalculatorTest" time="0"/>
+  <testcase name="singeNumberTest" classname="han.oose.dea.StringCalculatorTest" time="0.001"/>
+  <testcase name="overflowTest" classname="han.oose.dea.StringCalculatorTest" time="0.001"/>
   <testcase name="emptyStringTest" classname="han.oose.dea.StringCalculatorTest" time="0.001"/>
+  <testcase name="multipleDelimiters" classname="han.oose.dea.StringCalculatorTest" time="0.001"/>
 </testsuite>

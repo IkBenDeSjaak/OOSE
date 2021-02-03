@@ -1,15 +1,16 @@
 package han.oose.dea;
 
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class StringCalculatorTest {
-    private static StringCalculator calculator;
+    private  StringCalculator calculator;
 
-    @BeforeAll
-    public static void init() {
+    @BeforeEach
+    public void setup() {
         calculator = new StringCalculator();
     }
 
@@ -25,11 +26,21 @@ public class StringCalculatorTest {
 
     @Test
     public void multipleNumbersTest() {
-        assertEquals(4, calculator.add("1,4"));
+        assertEquals(3, calculator.add("1,2"));
     }
 
-//    @Test
-//    public void delimiterTest() {
-//        a
-//    }
+    @Test
+    public void newLineTest() {
+        assertEquals(6, calculator.add("1\n2,3"));
+    }
+
+    @Test
+    public void multipleDelimiters() {
+        assertEquals(3, calculator.add("//;\n1;2"));
+    }
+
+    @Test
+    void overflowTest(){
+        assertEquals(2, calculator.add("2,2000"));
+    }
 }
