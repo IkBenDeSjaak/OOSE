@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: han.oose.dea.StringCalculatorTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.045 s <<< FAILURE! - in han.oose.dea.StringCalculatorTest
+multipleNumbersTest  Time elapsed: 0.028 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <4> but was: <5>
+	at han.oose.dea.StringCalculatorTest.multipleNumbersTest(StringCalculatorTest.java:28)
+
