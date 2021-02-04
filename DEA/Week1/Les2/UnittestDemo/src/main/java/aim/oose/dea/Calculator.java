@@ -15,7 +15,7 @@ public class Calculator {
 
     public float divide(float x, float y) {
         if(y == 0) {
-            System.out.println("dit kan niet");
+            throw new IllegalArgumentException("delen door 0 is flauwekul");
         }
         return x / y;
     }
