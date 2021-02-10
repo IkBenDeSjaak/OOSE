@@ -12,7 +12,7 @@ class OrdersWriterTest {
     private Order order111;
 
     @BeforeEach
-    void setup() {
+    void setUp() {
         orders = new Orders();
         order111 = new Order(111);
 
@@ -67,7 +67,9 @@ class OrdersWriterTest {
 
         var ordersWriter = new OrdersWriter(orders);
 
-        var order111Json = JsonOrder111WithProduct("{\"code\": \"Shirt\", \"color\": \"blue\", \"size\": \"M\", \"price\": 2.99, \"currency\": \"TWD\"}");
+        var order111Json = JsonOrder111WithProduct(
+                "{\"code\": \"Shirt\", \"color\": \"blue\"," +
+                        " \"size\": \"M\", \"price\": 2.99, \"currency\": \"TWD\"}");
 
         // Act
         var ordersContent = ordersWriter.getContents();
@@ -83,7 +85,8 @@ class OrdersWriterTest {
 
         var ordersWriter = new OrdersWriter(orders);
 
-        var order111Json = JsonOrder111WithProduct("{\"code\": \"Pot\", \"color\": \"red\", \"price\": 16.5, \"currency\": \"SGD\"}");
+        var order111Json = JsonOrder111WithProduct(
+                "{\"code\": \"Pot\", \"color\": \"red\", \"price\": 16.5, \"currency\": \"SGD\"}");
 
         // Act
         var ordersContent = ordersWriter.getContents();
@@ -100,7 +103,9 @@ class OrdersWriterTest {
 
         var ordersWriter = new OrdersWriter(orders);
 
-        var order111Json = JsonOrder111WithProduct("{\"code\": \"Shirt\", \"color\": \"blue\", \"size\": \"XS\", \"price\": 2.99, \"currency\": \"TWD\"}");
+        var order111Json = JsonOrder111WithProduct(
+                "{\"code\": \"Shirt\", \"color\": \"blue\"," +
+                        " \"size\": \"XS\", \"price\": 2.99, \"currency\": \"TWD\"}");
 
         // Act
         var ordersContent = ordersWriter.getContents();
@@ -117,7 +122,9 @@ class OrdersWriterTest {
 
         var ordersWriter = new OrdersWriter(orders);
 
-        var order111Json = JsonOrder111WithProduct("{\"code\": \"Shirt\", \"color\": \"red\", \"size\": \"S\", \"price\": 2.99, \"currency\": \"TWD\"}");
+        var order111Json = JsonOrder111WithProduct(
+                "{\"code\": \"Shirt\", \"color\": \"red\"," +
+                        " \"size\": \"S\", \"price\": 2.99, \"currency\": \"TWD\"}");
 
         // Act
         var ordersContent = ordersWriter.getContents();
@@ -134,7 +141,9 @@ class OrdersWriterTest {
 
         var ordersWriter = new OrdersWriter(orders);
 
-        var order111Json = JsonOrder111WithProduct("{\"code\": \"Shirt\", \"color\": \"yellow\", \"size\": \"M\", \"price\": 2.99, \"currency\": \"TWD\"}");
+        var order111Json = JsonOrder111WithProduct(
+                "{\"code\": \"Shirt\", \"color\": \"yellow\"," +
+                        " \"size\": \"M\", \"price\": 2.99, \"currency\": \"TWD\"}");
 
         // Act
         var ordersContent = ordersWriter.getContents();
@@ -154,16 +163,22 @@ class OrdersWriterTest {
 
         var ordersWriter = new OrdersWriter(orders);
 
-        var order111JsonPart1 = "{\"code\": \"Shirt\", \"color\": \"no color\", \"size\": \"L\", \"price\": 2.99, \"currency\": \"TWD\"}";
-        var order111JsonPart2 = "{\"code\": \"Shirt\", \"color\": \"no color\", \"size\": \"XL\", \"price\": 2.99, \"currency\": \"TWD\"}";
-        var order111JsonPart3 = "{\"code\": \"Shirt\", \"color\": \"no color\", \"size\": \"XXL\", \"price\": 2.99, \"currency\": \"TWD\"}";
-        var order111JsonPart4 = "{\"code\": \"Shirt\", \"color\": \"no color\", \"size\": \"Invalid Size\", \"price\": 2.99, \"currency\": \"TWD\"}";
+        var order111JsonPart1 = "{\"code\": \"Shirt\", \"color\": \"no color\", \"size\": \"L\"," +
+                " \"price\": 2.99, \"currency\": \"TWD\"}";
+        var order111JsonPart2 = "{\"code\": \"Shirt\", \"color\": \"no color\", \"size\": \"XL\"," +
+                " \"price\": 2.99, \"currency\": \"TWD\"}";
+        var order111JsonPart3 = "{\"code\": \"Shirt\", \"color\": \"no color\", \"size\": \"XXL\"," +
+                " \"price\": 2.99, \"currency\": \"TWD\"}";
+        var order111JsonPart4 = "{\"code\": \"Shirt\", \"color\": \"no color\", \"size\": \"Invalid Size\"," +
+                " \"price\": 2.99, \"currency\": \"TWD\"}";
 
         // Act
         var ordersContent = ordersWriter.getContents();
 
         // Assert
-        assertEquals("{\"orders\": [" + JsonOrder111WithProduct(order111JsonPart1 + ", " + order111JsonPart2 + ", " + order111JsonPart3 + ", " + order111JsonPart4) + "]}", ordersContent);
+        assertEquals("{\"orders\": [" + JsonOrder111WithProduct(
+                order111JsonPart1 + ", " + order111JsonPart2 + ", " + order111JsonPart3 + ", " +
+                        order111JsonPart4) + "]}", ordersContent);
     }
 
 
