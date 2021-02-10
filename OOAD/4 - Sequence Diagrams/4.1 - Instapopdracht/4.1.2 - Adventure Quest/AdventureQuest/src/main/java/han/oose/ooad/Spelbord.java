@@ -16,11 +16,13 @@ public class Spelbord {
     }
     private Vakje kiesVrijVakje() {
         ArrayList<Vakje> beschikbareVakjes = new ArrayList<Vakje>();
+
         for (Vakje vakje : vakjes) {
-            if (vakje.getKarakter() != null) {
+            if (vakje.getKarakter() == null) {
                 beschikbareVakjes.add(vakje);
             }
         }
+
         return beschikbareVakjes.get(0);
     }
 
