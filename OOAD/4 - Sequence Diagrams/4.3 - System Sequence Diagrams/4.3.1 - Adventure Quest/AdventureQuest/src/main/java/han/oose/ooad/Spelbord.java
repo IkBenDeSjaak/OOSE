@@ -37,7 +37,7 @@ public class Spelbord {
         v.maakVakjeLeeg();
 
         k.setVakje(getVakje(vaknr));
-        k.verminderEnergie();
+        k.verminderEnergie(20);
 
         vakjes.forEach(vakje -> System.out.println(vakje.getVaknr() + "" + vakje.isLeeg()));
     }
@@ -46,11 +46,12 @@ public class Spelbord {
         if (karakter1.getEnergie() > 20) {
             Vakje oudVakje = karakter1.getVakje();
             Vakje vervangendVakje = getVakje(doelVak);
-            if (vervangendVakje.isLeeg() == karakter1.getVakje().isLeeg()) {
-                Karakter karakter2 = vervangendVakje.getKarakter();
-                karakter1.setVakje(vervangendVakje);
-                karakter2.setVakje(oudVakje);
-            }
+
+            Karakter karakter2 = vervangendVakje.getKarakter();
+            karakter1.setVakje(vervangendVakje);
+            karakter1.verminderEnergie(20);
+            karakter2.setVakje(oudVakje);
+
         }
 
         vakjes.forEach(vakje -> {

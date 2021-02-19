@@ -29,8 +29,8 @@ public class Karakter {
         v.setKarakter(this);
     }
 
-    public void verminderEnergie() {
-        energie -= 20;
+    public void verminderEnergie(int amount) {
+        energie -= amount;
         System.out.println(energie);
     }
 }
