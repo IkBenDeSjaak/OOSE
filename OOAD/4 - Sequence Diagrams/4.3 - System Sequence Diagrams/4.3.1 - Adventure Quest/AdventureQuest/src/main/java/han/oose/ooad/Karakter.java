@@ -33,4 +33,13 @@ public class Karakter {
         energie -= amount;
         System.out.println(energie);
     }
+
+    public void wisselVakjeMet(Karakter ander) {
+        Vakje vakjeAnder = ander.getVakje();
+        Vakje huidigVakje = getVakje();
+
+        setVakje(vakjeAnder);
+        verminderEnergie(20);
+        ander.setVakje(huidigVakje);
+    }
 }

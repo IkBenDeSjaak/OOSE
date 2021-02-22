@@ -27,6 +27,12 @@ public class Spel {
     }
 
     public void wisselVakje(String naamKarakter, int doelVak) {
-        bord.wisselVakje(getKarakter(naamKarakter), doelVak);
+        Karakter k = getKarakter(naamKarakter);
+        Karakter ander = bord.getKarakter(doelVak);
+        k.wisselVakjeMet(ander);
     }
+
+//    public void wisselVakje(String naamKarakter, int doelVak) {
+//        bord.wisselVakje(getKarakter(naamKarakter), doelVak);
+//    }
 }

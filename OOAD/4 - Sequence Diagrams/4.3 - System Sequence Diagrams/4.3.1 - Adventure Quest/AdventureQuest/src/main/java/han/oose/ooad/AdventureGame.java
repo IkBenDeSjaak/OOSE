@@ -8,8 +8,15 @@ public class AdventureGame {
 
         spel.meldAan("naamKarakter");
 
+        System.out.println(spel.getKarakter("Bob").getVakje().getVaknr());
+        System.out.println(spel.getKarakter("naamKarakter").getVakje().getVaknr());
+
 
 //        spel.teleporteer("naamkarakter", 30);
         spel.wisselVakje("naamKarakter", spel.getKarakter("Bob").getVakje().getVaknr());
+
+        System.out.println(spel.getKarakter("Bob").getVakje().getVaknr());
+        System.out.println(spel.getKarakter("naamKarakter").getVakje().getVaknr());
+
     }
 }

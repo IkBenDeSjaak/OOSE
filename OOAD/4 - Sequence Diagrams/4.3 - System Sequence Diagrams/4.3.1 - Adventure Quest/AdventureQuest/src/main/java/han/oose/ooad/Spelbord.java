@@ -18,6 +18,11 @@ public class Spelbord {
         k.setVakje(v);
     }
 
+    public Karakter getKarakter(int vaknr) {
+        Vakje vak = getVakje(vaknr);
+        return vak.getKarakter();
+    }
+
     private Vakje kiesVrijVakje() {
         Random rand = new Random();
         Vakje v;
