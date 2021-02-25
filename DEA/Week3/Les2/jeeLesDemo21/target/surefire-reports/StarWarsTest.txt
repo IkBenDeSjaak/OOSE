@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: StarWarsTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.044 s <<< FAILURE! - in StarWarsTest
+getJediTest  Time elapsed: 0.011 s  <<< ERROR!
+java.lang.RuntimeException: java.lang.ClassNotFoundException: org.glassfish.jersey.internal.RuntimeDelegateImpl
+	at StarWarsTest.getJediTest(StarWarsTest.java:29)
+Caused by: java.lang.ClassNotFoundException: org.glassfish.jersey.internal.RuntimeDelegateImpl
+	at StarWarsTest.getJediTest(StarWarsTest.java:29)
+

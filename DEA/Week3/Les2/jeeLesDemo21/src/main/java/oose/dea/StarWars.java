@@ -1,6 +1,8 @@
 package oose.dea;
 
+import oose.dea.oose.dea.dto.APKDTO;
 import oose.dea.oose.dea.dto.JediDTO;
+import oose.dea.oose.dea.dto.ShipDTO;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -29,6 +31,23 @@ public class StarWars {
 
         return Response.status(200).entity(jediDTO).build();
 
+    }
+
+    @POST
+    @Path("apk")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response getAPKForShip(ShipDTO shipDTO) {
+        APKDTO apkdto = new APKDTO();
+        apkdto.isValid = false;
+        apkdto.comments = "This ship has not been approved.";
+
+        if(shipDTO.name.equals("goodShip")) {
+            apkdto.isValid = true;
+            apkdto.comments = "This ship has been approved.";
+        }
+
+        return Response.status(200).entity(apkdto).build();
     }
 
 }
