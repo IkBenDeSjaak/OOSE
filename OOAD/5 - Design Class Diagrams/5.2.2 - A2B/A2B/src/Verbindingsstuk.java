@@ -27,8 +27,13 @@ public class Verbindingsstuk {
 	}
 
 	public int berekenReistijd() {
-        // TO DO implement
-		return 0;
+        int reistijd = normaleReistijd;
+
+        for (Vertraging vertraging: vertragingen) {
+        	reistijd += vertraging.getExtraReistijd();
+		}
+
+		return reistijd;
 	}
 
 }

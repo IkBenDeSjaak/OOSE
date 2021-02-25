@@ -14,9 +14,11 @@ public class Routeplanner {
 		} 
 		else {
 			for (Route r: routes) {
-				/* TO DO: pas onderstaand statement aan zodat de juiste 
-				   route-informatie aan infoRoutes wordt toegevoegd */  
-				infoRoutes.add("");
+				/* TO DO: pas onderstaand statement aan zodat de juiste
+				   route-informatie aan infoRoutes wordt toegevoegd */
+
+				int reistijd = r.berekenReistijd();
+				infoRoutes.add("Reistijd: " + reistijd + ", Route: " + r);
 			}
 		}
 		return infoRoutes;

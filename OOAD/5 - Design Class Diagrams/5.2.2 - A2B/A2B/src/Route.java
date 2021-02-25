@@ -12,8 +12,15 @@ public class Route {
 	}
 
 	public int berekenReistijd() {
-        // TO DO: implementeer deze methode
-		return 0;
+		// TO DO: implementeer deze methode
+
+		int reistijd = 0;
+
+		for(Verbindingsstuk v : verbindingsstukken) {
+			reistijd += v.berekenReistijd();
+		}
+
+		return reistijd;
 	}
 	
 	public void voegToe(Verbindingsstuk v) {
