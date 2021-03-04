@@ -43,6 +43,7 @@ public class JediDAOTest {
             /**** Assert ****/
             verify(connection).prepareStatement(expectedSQL);
             verify(preparedStatement).setInt(1,idToTest);
+            verify(preparedStatement).executeQuery();
 
             assertNull(jedi);
 

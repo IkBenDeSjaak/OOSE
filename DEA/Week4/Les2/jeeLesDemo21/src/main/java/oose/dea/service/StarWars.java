@@ -24,10 +24,37 @@ public class StarWars {
         return "May the force be with you, Luke!";
     }
 
+    /** Met path param **/
+
+//    @GET
+//    @Path("jedi/{id}")
+//    @Produces(MediaType.APPLICATION_JSON)
+//    public Response getJedi(@PathParam("id") int id){
+//
+//        // Retrieve from database:
+//        Jedi jedi = jediDAO.getJedi(id);
+//
+//
+//        if (jedi == null){
+//            // help de jedi bestaat niet! wat doen we nu?
+//            return Response.status(404).build();
+//        }
+//
+//        // this is considered ugly, but is it?
+//        JediDTO jediDTO = new JediDTO();
+//        jediDTO.name = jedi.getName();
+//        jediDTO.customerId = jedi.getId();
+//
+//        return Response.status(200).entity(jediDTO).build();
+//
+//    }
+
+    /** Met query param **/
+
     @GET
-    @Path("jedi/{id}")
+    @Path("jedi")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getJedi(@PathParam("id") int id){
+    public Response getJedi(@QueryParam("id") int id){
 
         // Retrieve from database:
         Jedi jedi = jediDAO.getJedi(id);
