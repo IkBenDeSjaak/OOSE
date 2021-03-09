@@ -1,6 +1,9 @@
 public class Test {
 
     public static void main(String args[]) {
-        Movie childrenTest = new Movie("children", 2020, "??????????????????");
+        IMovieType movieTypeRegular = new Regular();
+        Movie childrenTest = new Movie("children", 2020, movieTypeRegular);
+
+        System.out.println(childrenTest.getCharge(10));
     }
 }
