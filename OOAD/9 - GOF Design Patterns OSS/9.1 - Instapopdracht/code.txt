@@ -1,0 +1,7 @@
+public void work() {
+    strategy.doHomework(todoList);
+}
+
+public void update(Task t) {
+    todoList.addTask(t);
+}
