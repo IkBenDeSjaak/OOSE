@@ -71,7 +71,7 @@ Geef de responsibility aan een class die:
 **Observer Pattern**
 Wanneer?
 Toestand van objecten is afhankelijk van een ander object.
-![Observer](../../../patterns/observer.png)
+![Observer](https://github.com/IkBenDeSjaak/OOSE/blob/main/OOAD/Toets%20-%20OO%20Design/patterns/observer.png)
 
 **Strategy Pattern**
 Wanneer?
