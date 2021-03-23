@@ -66,7 +66,7 @@ Geef die verantwoordelijkheid aan een class B waarvoor geldt:
 **Controller (Facade, Use Case)**
 
 Probleem:
-Welke (niet-UI) class moet de system events afhandelen?Zoals gevonden in een System Sequence Diagram
+Welke (niet-UI) class moet de system events afhandelen? Zoals gevonden in een System Sequence Diagram
 
 Oplossing:
 Geef de responsibility aan een class die:
@@ -88,22 +88,22 @@ Toestand van objecten is afhankelijk van een ander object.
 
 Wanneer?
 Een object heeft meerdere opties om een operatie uit te voeren.
-![Strategy](/patterns/strategy.png)
+![Strategy](https://github.com/IkBenDeSjaak/OOSE/blob/main/OOAD/Toets%20-%20OO%20Design/patterns/strategy.png)
 
 **State Pattern**
 
 Wanneer?
 Gedrag van een object is afhankelijk van zijn huidige status. Dus bij verandering van zijn state verandert ook zijn gedrag.
-![State](/patterns/state.png)
+![State](https://github.com/IkBenDeSjaak/OOSE/blob/main/OOAD/Toets%20-%20OO%20Design/patterns/state.png)
 
 **Adapter Pattern**
 
 Wanneer?
 Een klasse verwacht een bepaalde interface voor een methode maar de service/klasse gebruikt een andere interface. Wordt voornamelijk gebruikt voor externe libraries.
-![Adapter](/patterns/adapter.png)
+![Adapter](https://github.com/IkBenDeSjaak/OOSE/blob/main/OOAD/Toets%20-%20OO%20Design/patterns/adapter.png)
 
 **Factory Pattern**
 
 Wie mag de Adapters maken?
 Factory bepaalt welke adapter er gemaakt wordt. Zo wordt de cohesie verhoogt.
-![Factory](/patterns/factory.png)
+![Factory](https://github.com/IkBenDeSjaak/OOSE/blob/main/OOAD/Toets%20-%20OO%20Design/patterns/factory.png)
