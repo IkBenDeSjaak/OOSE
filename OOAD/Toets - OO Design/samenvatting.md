@@ -40,7 +40,7 @@ Dit principe gaat over het verlagen van de koppeling.
 
 **Information Expert**
 
-Probleem
+Probleem:
 Ik moet responsibilities aan classes toewijzen
 Welk algemeen principe kan ik hierbij gebruiken?
 
@@ -52,7 +52,7 @@ Information hiding wordt dan in stand gehouden
 
 **Creator**
 
-Probleem
+Probleem:
 Welk object mag een instantie van een class A aanmaken?
 
 Oplossing:
