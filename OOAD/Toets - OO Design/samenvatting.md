@@ -81,29 +81,34 @@ Geef de responsibility aan een class die:
 **Observer Pattern**
 
 Wanneer?
+
 Toestand van objecten is afhankelijk van een ander object.
 ![Observer](https://github.com/IkBenDeSjaak/OOSE/blob/main/OOAD/Toets%20-%20OO%20Design/patterns/observer.png)
 
 **Strategy Pattern**
 
 Wanneer?
+
 Een object heeft meerdere opties om een operatie uit te voeren.
 ![Strategy](https://github.com/IkBenDeSjaak/OOSE/blob/main/OOAD/Toets%20-%20OO%20Design/patterns/strategy.png)
 
 **State Pattern**
 
 Wanneer?
+
 Gedrag van een object is afhankelijk van zijn huidige status. Dus bij verandering van zijn state verandert ook zijn gedrag.
 ![State](https://github.com/IkBenDeSjaak/OOSE/blob/main/OOAD/Toets%20-%20OO%20Design/patterns/state.png)
 
 **Adapter Pattern**
 
 Wanneer?
+
 Een klasse verwacht een bepaalde interface voor een methode maar de service/klasse gebruikt een andere interface. Wordt voornamelijk gebruikt voor externe libraries.
 ![Adapter](https://github.com/IkBenDeSjaak/OOSE/blob/main/OOAD/Toets%20-%20OO%20Design/patterns/adapter.png)
 
 **Factory Pattern**
 
 Wie mag de Adapters maken?
+
 Factory bepaalt welke adapter er gemaakt wordt. Zo wordt de cohesie verhoogt.
 ![Factory](https://github.com/IkBenDeSjaak/OOSE/blob/main/OOAD/Toets%20-%20OO%20Design/patterns/factory.png)
