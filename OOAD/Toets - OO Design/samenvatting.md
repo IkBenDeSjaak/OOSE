@@ -2,6 +2,7 @@
 
 ### Algemene principes
 
+
 **Modularization**
 
 Verdelen van functionaliteit in onafhankelijke modules.
